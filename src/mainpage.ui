@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>879</width>
+    <height>494</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Typing Speed Test</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../images/logo.png</normaloff>../images/logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: rgb(207, 220, 223);
+border-radius: 10px;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="sidebar">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>0</y>
+      <width>130</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgb(45, 116, 132);
+border-radius: 15px 0 0 15px;
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="btn_test">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>55</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Sans Serif</family>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background:rgb(211, 221, 221);
+color: rgb(12, 39, 46);
+border-radius: 2px;
+}
+QPushButton:hover{
+background: rgb(153, 189, 196);
+}</string>
+     </property>
+     <property name="text">
+      <string>Test</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_setting">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>105</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Sans Serif</family>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background:rgb(211, 221, 221);
+color: rgb(12, 39, 46);
+border-radius: 2px;
+}
+QPushButton:hover{
+background: rgb(153, 189, 196);
+}</string>
+     </property>
+     <property name="text">
+      <string>Settings</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_help">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>155</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Sans Serif</family>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background:rgb(211, 221, 221);
+color: rgb(12, 39, 46);
+border-radius: 2px;
+}
+QPushButton:hover{
+background: rgb(153, 189, 196);
+}</string>
+     </property>
+     <property name="text">
+      <string>Help</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>322</y>
+       <width>111</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../images/mysidebar-img.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_about">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>205</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Sans Serif</family>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background:rgb(211, 221, 221);
+color: rgb(12, 39, 46);
+border-radius: 2px;
+}
+QPushButton:hover{
+background: rgb(153, 189, 196);
+}</string>
+     </property>
+     <property name="text">
+      <string>About</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="pages">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>721</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page_test">
+     <property name="styleSheet">
+      <string notr="true">border-radius: 0;</string>
+     </property>
+     <widget class="QLabel" name="typethis">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>52</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>19</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(180, 185, 186);
+border-radius: 8px;</string>
+      </property>
+      <property name="text">
+       <string>Type This</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>69</x>
+        <y>63</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Type this word:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="words">
+      <property name="geometry">
+       <rect>
+        <x>35</x>
+        <y>140</y>
+        <width>641</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(180, 185, 186);
+border-radius: 5px;
+padding: 8px;</string>
+      </property>
+      <property name="text">
+       <string>These are some words that should be typed...</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="en">
+      <property name="geometry">
+       <rect>
+        <x>35</x>
+        <y>228</y>
+        <width>522</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(180, 185, 186);
+border-radius: 5px;
+padding: 8px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Type Here...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="timer">
+      <property name="geometry">
+       <rect>
+        <x>575</x>
+        <y>228</y>
+        <width>45</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(133, 169, 133);
+color: #000;
+border-radius: 5px;</string>
+      </property>
+      <property name="text">
+       <string>60</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="restart">
+      <property name="geometry">
+       <rect>
+        <x>635</x>
+        <y>228</y>
+        <width>45</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../images/again.png</normaloff>../images/again.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>35</x>
+        <y>328</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Correct Words:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>328</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Wrong Words:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>35</x>
+        <y>365</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Correct Letters:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>365</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Wrong Letters:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Cwords">
+      <property name="geometry">
+       <rect>
+        <x>131</x>
+        <y>340</y>
+        <width>71</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(10, 58, 30);</string>
+      </property>
+      <property name="text">
+       <string>10 words</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Cletters">
+      <property name="geometry">
+       <rect>
+        <x>134</x>
+        <y>370</y>
+        <width>81</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(10, 58, 30);</string>
+      </property>
+      <property name="text">
+       <string>10 letters</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Wwords">
+      <property name="geometry">
+       <rect>
+        <x>321</x>
+        <y>340</y>
+        <width>81</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(164, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>10 words</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>429</x>
+        <y>312</y>
+        <width>191</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(133, 169, 133);
+border-radius: 5px;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>66</x>
+         <y>7</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sans Serif</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Result:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="result">
+       <property name="geometry">
+        <rect>
+         <x>36</x>
+         <y>31</y>
+         <width>231</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>KacstDigital</family>
+         <pointsize>24</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(92, 53, 102);</string>
+       </property>
+       <property name="text">
+        <string>52 WPM</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>44</x>
+         <y>82</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sans Serif</family>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>(words per minute)</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="Wletters">
+      <property name="geometry">
+       <rect>
+        <x>323</x>
+        <y>373</y>
+        <width>81</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(164, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>10 Letters</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_setting">
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>137</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Time:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>207</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Language:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>277</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Difficulty:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="timeset">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>131</y>
+        <width>125</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(180, 185, 186);
+border-radius: 5px;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>1 Minute</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>30 Seconds</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>2 Minutes</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="langset">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>209</y>
+        <width>125</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(180, 185, 186);
+border-radius: 5px;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>English</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Persion</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="difset">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>282</y>
+        <width>125</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(180, 185, 186);
+border-radius: 5px;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Normal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Easy</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Difficult</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>365</x>
+        <y>72</y>
+        <width>281</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../images/key-img.png</pixmap>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_help">
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>260</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>35</x>
+        <y>70</y>
+        <width>621</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(180, 185, 186);
+border-radius: 5px;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>641</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sans Serif</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>There is a button next to the timer.  When you press it, you'r time starts
+and you type as fast as you can!
+You can also customize your test in Settings</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>100</y>
+         <width>581</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Sans Serif</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>After typing each word, press Enter and go for the next word.</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>151</x>
+        <y>336</y>
+        <width>311</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>for report a problem or ask a question.</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>55</x>
+        <y>350</y>
+        <width>91</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(60, 80, 164)</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;mailto: m.matin.ardestani@gmail.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Send Email&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_about">
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>80</y>
+        <width>611</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The Typing Test measures an individual's typing speed and accuracy. &lt;/p&gt;&lt;p&gt;The test generates three scores: &lt;/p&gt;&lt;p&gt;- Words per Minute (WPM)&lt;br/&gt;- Number of Errors&lt;br/&gt;- and Adjusted Words per Minute (WPM - Errors)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>341</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>15</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>What is a Typing test?</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>265</y>
+        <width>341</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>15</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>About Creator</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>300</y>
+        <width>611</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Sans Serif</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Matin Ardestani is an Iranian teenager who is keen on programming.&lt;/p&gt;&lt;p&gt;Email: &lt;a href=&quot;mailto:m.matin.ardestani@gmail.com&quot;&gt;m.matin.ardestani@gmail.com&lt;/a&gt; &lt;/p&gt;&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/Matin-Ardestani/&quot;&gt;Matin-Ardestani&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btn_exit">
+    <property name="geometry">
+     <rect>
+      <x>835</x>
+      <y>7</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgb(180, 185, 186);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../images/close.png</normaloff>../images/close.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_min">
+    <property name="geometry">
+     <rect>
+      <x>795</x>
+      <y>7</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgb(180, 185, 186);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../images/minimize.png</normaloff>../images/minimize.png</iconset>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_exit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>834</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>439</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_min</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>794</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>439</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
