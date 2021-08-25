@@ -10,28 +10,28 @@ class RootMain(QMainWindow):
         self.ui = Ui_PagesWindow()
         self.ui.setupUi(self)
 
-        self.ui.btn_test.clicked.connect(lambda: [self.ui.pages.setCurrentWidget(self.ui.page_test) , self.ui.btn_test.setStyleSheet('background: rgb(106, 151, 159); border-radius: 2px;'),
-        self.ui.btn_setting.setStyleSheet('background:rgb(211, 221, 221); border-radius: 2px;'),
-        self.ui.btn_about.setStyleSheet('background:rgb(211, 221, 221); border-radius: 2px;'),
-        self.ui.btn_help.setStyleSheet('background:rgb(211, 221, 221); border-radius: 2px;')
+        self.ui.btn_test.clicked.connect(lambda: [self.ui.pages.setCurrentWidget(self.ui.page_test) , self.ui.btn_test.setStyleSheet('background: rgb(25, 106, 72);color: #fff;  border-radius: 4px;'),
+        self.ui.btn_setting.setStyleSheet('background:rgb(211, 221, 221); border-radius: 4px;'),
+        self.ui.btn_about.setStyleSheet('background:rgb(211, 221, 221); border-radius: 4px;'),
+        self.ui.btn_help.setStyleSheet('background:rgb(211, 221, 221); border-radius: 4px;')
         ])
 
-        self.ui.btn_setting.clicked.connect(lambda: [self.ui.pages.setCurrentWidget(self.ui.page_setting) , self.ui.btn_setting.setStyleSheet('background: rgb(106, 151, 159); border-radius: 2px;'),
-        self.ui.btn_test.setStyleSheet('background:rgb(211, 221, 221); border-radius: 2px;'),
-        self.ui.btn_about.setStyleSheet('background:rgb(211, 221, 221); border-radius: 2px;'),
-        self.ui.btn_help.setStyleSheet('background:rgb(211, 221, 221); border-radius: 2px;')
+        self.ui.btn_setting.clicked.connect(lambda: [self.ui.pages.setCurrentWidget(self.ui.page_setting) , self.ui.btn_setting.setStyleSheet('background: rgb(25, 106, 72);color: #fff;  border-radius: 4px;'),
+        self.ui.btn_test.setStyleSheet('background:rgb(211, 221, 221); border-radius: 4px;'),
+        self.ui.btn_about.setStyleSheet('background:rgb(211, 221, 221); border-radius: 4px;'),
+        self.ui.btn_help.setStyleSheet('background:rgb(211, 221, 221); border-radius: 4px;')
         ])
 
-        self.ui.btn_help.clicked.connect(lambda: [self.ui.pages.setCurrentWidget(self.ui.page_help) , self.ui.btn_help.setStyleSheet('background: rgb(106, 151, 159); border-radius: 2px;'),
-        self.ui.btn_test.setStyleSheet('background:rgb(211, 221, 221); border-radius: 2px;'),
-        self.ui.btn_setting.setStyleSheet('background:rgb(211, 221, 221); border-radius: 2px;'),
-        self.ui.btn_about.setStyleSheet('background:rgb(211, 221, 221); border-radius: 2px;'),
+        self.ui.btn_help.clicked.connect(lambda: [self.ui.pages.setCurrentWidget(self.ui.page_help) , self.ui.btn_help.setStyleSheet('background: rgb(25, 106, 72);color: #fff;  border-radius: 4px;'),
+        self.ui.btn_test.setStyleSheet('background:rgb(211, 221, 221); border-radius: 4px;'),
+        self.ui.btn_setting.setStyleSheet('background:rgb(211, 221, 221); border-radius: 4px;'),
+        self.ui.btn_about.setStyleSheet('background:rgb(211, 221, 221); border-radius: 4px;'),
         ])
 
-        self.ui.btn_about.clicked.connect(lambda: [self.ui.pages.setCurrentWidget(self.ui.page_about) , self.ui.btn_about.setStyleSheet('background: rgb(106, 151, 159); border-radius: 2px;'),
-        self.ui.btn_test.setStyleSheet('background:rgb(211, 221, 221); border-radius: 2px;'),
-        self.ui.btn_setting.setStyleSheet('background:rgb(211, 221, 221); border-radius: 2px;'),
-        self.ui.btn_help.setStyleSheet('background:rgb(211, 221, 221); border-radius: 2px;'),
+        self.ui.btn_about.clicked.connect(lambda: [self.ui.pages.setCurrentWidget(self.ui.page_about) , self.ui.btn_about.setStyleSheet('background: rgb(25, 106, 72); color: #fff; border-radius: 4px;'),
+        self.ui.btn_test.setStyleSheet('background:rgb(211, 221, 221); border-radius: 4px;'),
+        self.ui.btn_setting.setStyleSheet('background:rgb(211, 221, 221); border-radius: 4px;'),
+        self.ui.btn_help.setStyleSheet('background:rgb(211, 221, 221); border-radius: 4px;'),
         ])
 
         # removing borders
