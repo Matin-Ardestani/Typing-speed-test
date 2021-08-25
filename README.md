@@ -1,2 +1,2 @@
 # Typing-speed-test
-Typing speed test app by Python
+Typing speed test program by Python
