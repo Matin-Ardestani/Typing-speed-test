@@ -622,7 +622,6 @@ class Ui_PagesWindow(object):
             self.typethis.setText(self.tw_list[0])
 
             self.en.setText('')
-            print('cw: %s, ww: %s, cl: %s, wl: %s' %(self.correct_words, self.wrong_words , self.correct_letters, self.wrong_letter))
 
     def second(self):
         global counter
