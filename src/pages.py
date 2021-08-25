@@ -10,17 +10,23 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import random
-
+from pathlib import Path
 
 class Ui_PagesWindow(object):
 
     words_list = []
+    direc = str(Path.cwd())
+    print(direc)
+    dir_list = direc.split('/')
+    if dir_list[-1] == 'src':
+        direc = direc[:-4]
+    print(direc)
 
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(879, 500)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("/home/matin/Desktop/newproject/images/logo.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("%s/images/logo.png" % self.direc), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet("background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #A7CAD1, stop:1 #9196ba);\n"
 "border-radius: 10px;")
@@ -82,7 +88,7 @@ class Ui_PagesWindow(object):
         self.label = QtWidgets.QLabel(self.sidebar)
         self.label.setGeometry(QtCore.QRect(10, 322, 111, 111))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("/home/matin/Desktop/newproject/images/sidebar.png"))
+        self.label.setPixmap(QtGui.QPixmap("%s/images/sidebar.png" % self.direc))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.btn_about = QtWidgets.QPushButton(self.sidebar)
@@ -166,7 +172,7 @@ class Ui_PagesWindow(object):
         self.restart.setStyleSheet("background: none;")
         self.restart.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("/home/matin/Desktop/newproject/images/restart.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("%s/images/restart.png" % self.direc), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.restart.setIcon(icon1)
         self.restart.setIconSize(QtCore.QSize(50, 50))
         self.restart.setObjectName("restart")
@@ -316,7 +322,7 @@ class Ui_PagesWindow(object):
         self.label_10 = QtWidgets.QLabel(self.page_setting)
         self.label_10.setGeometry(QtCore.QRect(365, 72, 281, 321))
         self.label_10.setText("")
-        self.label_10.setPixmap(QtGui.QPixmap("/home/matin/Desktop/newproject/images/key-img.png"))
+        self.label_10.setPixmap(QtGui.QPixmap("%s/images/key-img.png" % self.direc))
         self.label_10.setObjectName("label_10")
         self.pages.addWidget(self.page_setting)
         self.page_help = QtWidgets.QWidget()
@@ -403,7 +409,7 @@ class Ui_PagesWindow(object):
 "")
         self.btn_exit.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("/home/matin/Desktop/newproject/images/close.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap("%s/images/close.png" % self.direc), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btn_exit.setIcon(icon2)
         self.btn_exit.setIconSize(QtCore.QSize(20, 20))
         self.btn_exit.setObjectName("btn_exit")
@@ -414,7 +420,7 @@ class Ui_PagesWindow(object):
 "")
         self.btn_min.setText("")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("/home/matin/Desktop/newproject/images/minimize.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap("%s/images/minimize.png" % self.direc), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btn_min.setIcon(icon3)
         self.btn_min.setIconSize(QtCore.QSize(20, 20))
         self.btn_min.setObjectName("btn_min")
