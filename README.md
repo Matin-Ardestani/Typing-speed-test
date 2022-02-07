@@ -7,8 +7,6 @@ Tpye as fast as you can and get your typing speed score!
 # About me
 Full name: Matin Ardestani
 
-Age: 14
-
 Location: Tehran, Iran
 
 More information: https://bioly.io/MatinArdestani
